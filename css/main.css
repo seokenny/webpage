@@ -127,11 +127,13 @@ li {
 .left_handed {
     bottom:20px;
     left:25px;
+    color:#3C3444;
 }
 
 .right_handed {
     bottom:20px;
     right:25px;
+    color:#3C3444;
 }
 
 .left_handed_css {
@@ -140,6 +142,10 @@ li {
 
 .m_nav_change {
     right:80% !important;
+}
+
+.active_hand {
+    color:#7F738B;
 }
 
 /**About Me**/
@@ -152,9 +158,26 @@ li {
     font-family:'Cocogoose';
 }
 
+.who_am_i {
+    letter-spacing:.1em;
+    margin:25px 0;
+}
+
 .about_description {
     font-family:'Century Gothic';
-    font-weight:bold;
+    font-size:.9em;
+    width:90%;
+    margin-left:5%;
+    line-height:2em;
+}
+
+#about_me_container {
+    text-align:center;
+    padding:75px 0;
+    width:90%;
+    margin-left:5%;
+    border-top:1px dashed #aaa;
+    border-bottom:1px dashed #aaa;
 }
 
 /**Banners**/
@@ -179,7 +202,6 @@ li {
 
 .work_item {
     width:80%;
-    border:1px solid black;
     margin:50px 0;
     margin-left:10%;
     text-align:center;
@@ -194,10 +216,17 @@ li {
 
 .work_title {
     font-family:'Sonder';
+    margin:25px 0 7.5px 0;
+    letter-spacing:.2em;
 }
 
-.work_position, .work_description, .work_buttons {
+.work_description {
     font-family:'Verdana';
+}
+
+.work_position, .work_buttons {
+    font-family:'Century Gothic';
+    letter-spacing:.1em;
 }
 
 .work_description, .work_buttons {
@@ -209,10 +238,18 @@ li {
     color:#ccc;
 }
 
+.work_description p {
+    margin:15px 0;
+}
+
 .work_buttons {
     display:flex;
     justify-content:center;
     font-weight:bold;
+}
+
+.work_content {
+    vertical-align:top;
 }
 
 #rugsusa .work_buttons {color:#A82C20;}
@@ -222,10 +259,8 @@ li {
 #zombiedice .work_buttons {color:#5B1F6F;}
 
 .view_line {
-    border-left:1px solid black;
-}
-
-.view_buttons {
+    border-left:1px solid #aaa;
+    margin:0 15px;
 }
 
 @font-face { font-family: Sunday; src: url("../fonts/Sunday.ttf"); }
@@ -242,4 +277,87 @@ li {
 
 .m_nav_hide {
     opacity:0 !important;
+}
+
+.right_float {
+    float:unset;
+}
+
+@media only screen and (min-width:576px) {
+    .work_content, .work_banner {
+        width:90%;
+        margin-left:5%;
+    }
+    .work_banner {
+        padding-top:50%;
+    }
+}
+
+@media only screen and (min-width:750px) {
+    /* .work_banner, .work_content {
+        width:47.5%;
+        display:inline-block;
+    }
+    .work_banner {
+        margin-right:2.5%;
+        margin-left:unset;
+    }
+    .work_content {
+        margin-left:2.5%;
+        text-align:left;
+    }
+    .right_float {
+        float:right;
+        margin-right:unset;
+        margin-left:2.5%;
+    }
+    .reverse_text {
+        margin-right:2.5%;
+        margin-left:unset;
+        text-align:right;
+    } */
+    .work_item {
+        display:flex;
+    }
+    #rugsusa, #konditori, #mystiq {
+        text-align:left;
+    }
+    #rugsusa .work_banner, #konditori .work_banner, #mystiq .work_banner {
+        margin-left:unset;
+    }
+    .wb_left {
+        justify-content:flex-start;
+    }
+    .wb_right {
+        justify-content:flex-end;
+    }
+    #mixhour, #fuyuramen, #zombiedice {
+        flex-direction:row-reverse;
+        text-align:right;
+    }
+    .reverse_text {
+        margin-left:unset;
+    }
+    .view_live, .view_line, .view_code {
+        display:inline-block;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .about_description {
+        width:705px;
+        margin:auto;
+    }
+}
+
+@media only screen and (min-width:870px) {
+    .work_banner {
+        padding-top:307px;
+    }
+}
+
+@media only screen and (min-width:1450px) {
+    .work_banner {
+        width:516px;
+    }
 }

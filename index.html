@@ -35,8 +35,8 @@
                 <li class="m_nav_li">Design</li>
             </ul>
             <div id="handmode">
-                <div class="left_handed hand" onclick="onLeftClick()">LEFT-HANDED</div>
-                <div class="right_handed hand" onclick="onRightClick()">RIGHT-HANDED</div>
+                <div id="left_side" class="left_handed hand" onclick="onLeftClick()">LEFT-HANDED</div>
+                <div id="right_side" class="right_handed hand active_hand" onclick="onRightClick()">RIGHT-HANDED</div>
             </div>
         </div>
 
@@ -44,12 +44,16 @@
         <div id="about_container">
 
             <div class="wt_center">
-                <h1 class="kenny">Kenny Seo</h1>
-                <h4 class="who_am_i">Who am I?</h4>
-                <p class="about_description">I am a Front End Web Developer currently living in New York City. I graduated from Queens College with a degree in Graphic Design. In my down time, I love coding, giving my dog attention, playing board games, and listening to lofi music.</p>
+                <h1 class="kenny lax" data-lax-translate-y="0 0, 2500 -400" data-lax-opacity="0 1, 400 0">Kenny Seo</h1>
             </div>
 
         <!--end of #about_container div-->
+        </div>
+
+        <!--About Me-->
+        <div id="about_me_container" class="lax" data-lax-opacity="0 0, 400 1">
+            <h1 class="who_am_i">Who am I?</h1>
+            <p class="about_description">I am a Front End Web Developer currently living in New York City. I graduated from Queens College with a degree in Graphic Design. In my down time, I love coding, giving my dog attention, playing board games, and listening to lofi music.</p>
         </div>
 
 
@@ -59,10 +63,9 @@
 
             <!--Rugs USA-->
             <div id="rugsusa" class="work_item">
-                <div id="rugsusa_banner" class="work_banner"></div>
-                <div class="work_content">
+                <div id="rugsusa_banner" class="work_banner" data-tilt data-tilt-max="2.5"></div><div class="work_content">
                     <div class="work_title">
-                        <h2 id="rugsusa_title">RUGS USA</h2>
+                        <h1 id="rugsusa_title">RUGS USA</h1>
                     </div>
                     <div class="work_position">
                         <h5>Front End Web Developer</h5>
@@ -70,7 +73,7 @@
                     <div class="work_description">
                         <p>Rugs USA is an ecommerce wholesale company that offers different rugs, furnitures, and accessories at rock bottom prices.With great customer service, Rugs USA aims to be the best customer experience anyone could get.</p>
                     </div>
-                    <div class="work_buttons">
+                    <div class="work_buttons wb_left">
                         <div class="view_live view_buttons">View Live</div>
                         <div class="view_line"></div>
                         <div class="view_code view_buttons">View Code</div>
@@ -80,10 +83,9 @@
 
             <!--Mix Hour-->
             <div id="mixhour" class="work_item">
-                <div id="mixhour_banner" class="work_banner"></div>
-                <div class="work_content">
+                <div id="mixhour_banner" class="work_banner right_float"></div><div class="work_content reverse_text">
                     <div class="work_title">
-                        <h2 id="mixhour_title">MIX HOUR</h2>
+                        <h1 id="mixhour_title">MIX HOUR</h1>
                     </div>
                     <div class="work_position">
                         <h5>Music Playlist Finder</h5>
@@ -91,7 +93,7 @@
                     <div class="work_description">
                         <p>Mix Hour is a website that allows the user to search for a genre of music that they want to listen to. Using the YouTube API, Mix Hour returns a list of hour long playlist videos of the searched genre and allows the user to listen to them on the site.</p>
                     </div>
-                    <div class="work_buttons">
+                    <div class="work_buttons wb_right">
                         <div class="view_live view_buttons">View Live</div>
                         <div class="view_line"></div>
                         <div class="view_code view_buttons">View Code</div>
@@ -101,10 +103,9 @@
 
             <!--Konditori-->
             <div id="konditori" class="work_item">
-                <div id="konditori_banner" class="work_banner"></div>
-                <div class="work_content">
+                <div id="konditori_banner" class="work_banner"></div><div class="work_content">
                     <div class="work_title">
-                        <h2 id="konditori_title">KONDITORI</h2>
+                        <h1 id="konditori_title">KONDITORI</h1>
                     </div>
                     <div class="work_position">
                         <h5>Cafe Website</h5>
@@ -112,7 +113,7 @@
                     <div class="work_description">
                         <p>Konditori is a Swedish cafe that is popular in New York City. Featuring coffee, tea, and bakery items, Konditori offers a variety of freshly baked muffins, freshly ground coffee, and unique tea that could only be brought in from Sweden.</p>
                     </div>
-                    <div class="work_buttons">
+                    <div class="work_buttons wb_left">
                         <div class="view_live view_buttons">View Live</div>
                         <div class="view_line"></div>
                         <div class="view_code view_buttons">View Code</div>
@@ -122,10 +123,9 @@
 
             <!--Fuyu Ramen-->
             <div id="fuyuramen" class="work_item">
-                <div id="fuyuramen_banner" class="work_banner"></div>
-                <div class="work_content">
+                <div id="fuyuramen_banner" class="work_banner right_float"></div><div class="work_content reverse_text">
                     <div class="work_title">
-                        <h2 id="fuyuramen_title">FUYU RAMEN</h2>
+                        <h1 id="fuyuramen_title">FUYU RAMEN</h1>
                     </div>
                     <div class="work_position">
                         <h5>Restaurant Website</h5>
@@ -133,7 +133,7 @@
                     <div class="work_description">
                         <p>Fuyu Ramen is a new Japanese ramen restaurant that opened up in Sunnyside, Queens in November 2018. They serve a variety of different dishes such as appetizers, ramen, rice bowls, beverages, and other asian fusion dishes. </p>
                     </div>
-                    <div class="work_buttons">
+                    <div class="work_buttons wb_right">
                         <div class="view_live view_buttons">View Live</div>
                         <div class="view_line"></div>
                         <div class="view_code view_buttons">View Code</div>
@@ -143,10 +143,9 @@
 
             <!--MYSTIQ-->
             <div id="mystiq" class="work_item">
-                <div id="mystiq_banner" class="work_banner"></div>
-                <div class="work_content">
+                <div id="mystiq_banner" class="work_banner"></div><div class="work_content">
                     <div class="work_title">
-                        <h2 id="mystiq_title">MYSTIQ</h2>
+                        <h1 id="mystiq_title">MYSTIQ</h1>
                     </div>
                     <div class="work_position">
                         <h5>Catalogs Website</h5>
@@ -154,7 +153,7 @@
                     <div class="work_description">
                         <p>MYSTIQ is a wholesale clothing company that offers a variety of accessories and clothing seasonally. MYSTIQ attends many fashion shows across America to ensure that customers get a chance to view the items.</p>
                     </div>
-                    <div class="work_buttons">
+                    <div class="work_buttons wb_left">
                         <div class="view_live view_buttons">View Live</div>
                         <div class="view_line"></div>
                         <div class="view_code view_buttons">View Code</div>
@@ -164,10 +163,9 @@
 
             <!--ZOMBIE DICE-->
             <div id="zombiedice" class="work_item">
-                <div id="zombiedice_banner" class="work_banner"></div>
-                <div class="work_content">
+                <div id="zombiedice_banner" class="work_banner right_float"></div><div class="work_content reverse_text">
                     <div class="work_title">
-                        <h2 id="zombiedice_title">ZOMBIE DICE</h2>
+                        <h1 id="zombiedice_title">ZOMBIE DICE</h1>
                     </div>
                     <div class="work_position">
                         <h5>Dice Rolling Game</h5>
@@ -175,7 +173,7 @@
                     <div class="work_description">
                         <p>Zombie Dice is a game created by the famous board game creator, Steve Jackson. Players roll for brains, but they have to be careful. If they roll the wrong dice and get a shotgun, they lose one of their three lives. First to thirteen brains wins!</p>
                     </div>
-                    <div class="work_buttons">
+                    <div class="work_buttons wb_right">
                         <div class="view_live view_buttons">View Live</div>
                         <div class="view_line"></div>
                         <div class="view_code view_buttons">View Code</div>
@@ -186,6 +184,8 @@
         <!--end of #work_container div-->
         </div>
 
+    <script src="js/vanilla-tilt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/app.js"></script>
     </body>
