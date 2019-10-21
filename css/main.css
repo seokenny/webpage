@@ -30,8 +30,29 @@ body {
     margin:30px 0 20px 20px;
     cursor:pointer;
     position:fixed;
-    right:20px;
     z-index:20;
+    right:20px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity:1;
+}
+
+#m_nav_2 {
+    width:35px;
+    height:30px;
+    margin:30px 0 20px 20px;
+    cursor:pointer;
+    position:fixed;
+    z-index:20;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity:0;
 }
 
 .bar {
@@ -115,6 +136,10 @@ li {
 
 .left_handed_css {
     width:0;
+}
+
+.m_nav_change {
+    right:80% !important;
 }
 
 /**About Me**/
@@ -211,6 +236,10 @@ li {
     display:none;
 }
 
-#mobile_navigation.show {
-    display:block;
+.m_nav_show {
+    opacity:1 !important;
+}
+
+.m_nav_hide {
+    opacity:0 !important;
 }
