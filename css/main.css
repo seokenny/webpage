@@ -14,6 +14,10 @@
     padding:unset;
 }
 
+ul {
+    list-style-type:none;
+}
+
 body {
     background:#160D1F;
     color:white;
@@ -27,6 +31,7 @@ body {
     cursor:pointer;
     position:fixed;
     right:20px;
+    z-index:20;
 }
 
 .bar {
@@ -56,6 +61,73 @@ body {
 
 .change #bar1 {
     opacity:0;
+}
+
+#mobile_navigation {
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:10;
+    transition:0.3s ease-in-out;
+    background:#160D1F;
+}
+
+#mobile_navigation ul, #handmode {
+    font-size:.9em;
+    font-weight:bold;
+    font-family:'Century Gothic';
+}
+
+#mobile_navigation ul {
+    height:100%;
+    width:100%;
+    /* background:#160D1F; */
+    display:flex;
+    flex-direction:column;
+    text-align:right;
+    justify-content:center;
+}
+
+.m_nav_li {
+    margin:25px 50px 25px 50px;
+}
+
+.m_social_buttons {
+    margin:25px 50px 25px 0;
+}
+
+.social_button {
+    height:30px;
+    width:30px;
+    border-radius:100%;
+    background:white;
+    display:inline-block;
+}
+
+.sb_0, .sb_1 {
+    margin:0 7.5px;
+}
+
+.sb_2 {
+    margin-left:7.5px;
+}
+
+.hand {
+    position:fixed;
+}
+
+.left_handed {
+    bottom:20px;
+    left:25px;
+}
+
+.right_handed {
+    bottom:20px;
+    right:25px;
+}
+
+.left_handed_css {
+    width:0;
 }
 
 /**About Me**/
@@ -96,6 +168,7 @@ body {
 .work_item {
     width:80%;
     border:1px solid black;
+    margin:50px 0;
     margin-left:10%;
     text-align:center;
 }
@@ -120,7 +193,8 @@ body {
 }
 
 .work_description {
-    line-height:2em;
+    line-height:2.35em;
+    color:#ccc;
 }
 
 .work_buttons {
@@ -145,3 +219,11 @@ body {
 @font-face { font-family: Sunday; src: url("../fonts/Sunday.ttf"); }
 @font-face { font-family: Cocogoose; src: url("../fonts/Cocogoose.ttf"); }
 @font-face { font-family: Sonder; src: url("../fonts/Sonder.otf"); }
+
+.hidden {
+    display:none;
+}
+
+#mobile_navigation.show {
+    display:block;
+}

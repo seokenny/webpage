@@ -5,6 +5,7 @@
     <head>
         <title>Kenny Seo | Web Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -16,6 +17,28 @@
             <div id="bar1" class="bar"></div>
             <div id="bar2" class="bar"></div>
         </div>
+
+        <!--Mobile Navigation-->
+        <div id="mobile_navigation" class="animated hidden slideOutUp fast">
+            <ul>
+                <li class="m_nav_li">Home</li>
+                <li class="m_nav_li">About</li>
+                <li class="m_nav_li">Works</li>
+                <li class="m_nav_li">Contact</li>
+                <li class="m_nav_li">Resume</li>
+                <li class="m_nav_li">Design</li>
+                <div class="m_social_buttons">
+                    <div class="social_button sb_0"></div>
+                    <div class="social_button sb_1"></div>
+                    <div class="social_button sb_2"></div>
+                </div>
+            </ul>
+            <div id="handmode">
+                <div class="left_handed hand" onclick="onNavClick()">LEFT-HANDED</div>
+                <div class="right_handed hand">RIGHT-HANDED</div>
+            </div>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
 
         <!--About Me-->
         <div id="about_container">
@@ -163,6 +186,7 @@
         <!--end of #work_container div-->
         </div>
 
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/app.js"></script>
     </body>
 
