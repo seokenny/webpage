@@ -356,8 +356,17 @@ li {
     }
 }
 
-@media only screen and (min-width:1450px) {
+@media only screen and (min-width:1265px) {
+    .work_banner, .work_content {
+        width:475px;
+    }
+    .work_item {
+        justify-content:center;
+    }
+}
+
+/* @media only screen and (min-width:1450px) {
     .work_banner {
         width:516px;
     }
-}
+} */
