@@ -11,10 +11,18 @@ function onMenuClick() {
     document.getElementById("mobile_navigation").classList.toggle("slideInDown");
 }
 
-function onNavClick() {
+function onLeftClick() {
     var navList = [];
     navList = document.getElementsByClassName("m_nav_li");
     for(var i = 0; i < navList.length; i++){
-        navList[i].classList.toggle("left_handed_css");
+        navList[i].classList.add("left_handed_css");
+    }
+}
+
+function onRightClick() {
+    var navList = [];
+    navList = document.getElementsByClassName("m_nav_li");
+    for(var i = 0; i < navList.length; i++){
+        navList[i].classList.remove("left_handed_css");
     }
 }
