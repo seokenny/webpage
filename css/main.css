@@ -1,0 +1,147 @@
+.wt_center {
+	/**Start of vertical/horizontal centering**/
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	/**End of vertical/horizontal centering**/
+	text-align:center;
+	width:100%;
+}
+
+*, p, h1, h2, h3, h4, h5, h6, ul, li {
+    margin:unset;
+    padding:unset;
+}
+
+body {
+    background:#160D1F;
+    color:white;
+}
+
+/**Navigation**/
+#m_nav {
+    width:35px;
+    height:30px;
+    margin:30px 0 20px 20px;
+    cursor:pointer;
+    position:fixed;
+    right:20px;
+}
+
+.bar {
+    height:5px;
+    width:100%;
+    background:white;
+    display:block;
+    border-radius:10px;
+    transition:0.3s ease-in-out;
+}
+
+#bar0 {
+    transform:translateY(-4px);
+}
+
+#bar2 {
+    transform:translateY(4px);
+}
+
+.change #bar0 {
+    transform:translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    transform:translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar1 {
+    opacity:0;
+}
+
+/**About Me**/
+#about_container {
+    height:100vh;
+    width:100%;
+}
+
+.kenny, .who_am_i {
+    font-family:'Cocogoose';
+}
+
+.about_description {
+    font-family:'Century Gothic';
+    font-weight:bold;
+}
+
+/**Banners**/
+#rugsusa_banner {background-image:url("../images/rugsbannernewsmall.jpg");}
+#mixhour_banner {background-image:url("../images/guesserbannernewsmall.jpg");}
+#konditori_banner {background-image:url("../images/konditoribannersm.jpg");}
+#fuyuramen_banner {background-image:url("../images/fuyubannernewsmall.jpg");}
+#mystiq_banner {background-image:url("../images/mysticbannernewsmall.jpg");}
+#zombiedice_banner {background-image:url("../images/zombiebannernewsmall.jpg");}
+
+/**Titles**/
+#rugsusa_title {color:#FF6152;}
+#mixhour_title {color:#BC0C6A;}
+#konditori_title {color:#1AE5B4;}
+#zombiedice_title {color:#89499D;}
+
+
+/**Work**/
+#work_container {
+    width:100%;
+}
+
+.work_item {
+    width:80%;
+    border:1px solid black;
+    margin-left:10%;
+    text-align:center;
+}
+
+.work_banner{
+    width:100%;
+    padding-top:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.work_title {
+    font-family:'Sonder';
+}
+
+.work_position, .work_description, .work_buttons {
+    font-family:'Verdana';
+}
+
+.work_description, .work_buttons {
+    font-size:.8em;
+}
+
+.work_description {
+    line-height:2em;
+}
+
+.work_buttons {
+    display:flex;
+    justify-content:center;
+    font-weight:bold;
+}
+
+#rugsusa .work_buttons {color:#A82C20;}
+#mixhour .work_buttons {color:#8E0850;}
+#konditori .work_buttons {color:#117D63;}
+#fuyuramen .work_buttons {color:#076177;}
+#zombiedice .work_buttons {color:#5B1F6F;}
+
+.view_line {
+    border-left:1px solid black;
+}
+
+.view_buttons {
+}
+
+@font-face { font-family: Sunday; src: url("../fonts/Sunday.ttf"); }
+@font-face { font-family: Cocogoose; src: url("../fonts/Cocogoose.ttf"); }
+@font-face { font-family: Sonder; src: url("../fonts/Sonder.otf"); }
