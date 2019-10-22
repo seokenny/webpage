@@ -11,7 +11,6 @@
     </head>
 
     <body>
-        <!-- <img src="images/background.jpg" class="full_bg lax" data-lax-translate-y="0 1, 10000 -1000"></div> -->
         <!--Nav Bar-->
         <div id="m_nav" onclick="onMenuClick()">
             <div id="bar0" class="bar"></div>
@@ -43,19 +42,20 @@
         <div id="desktop_navigation">
             <div class="scroll_background lax"  data-lax-opacity="0 0, 600 1"></div>
             <ul>
-                <li class="nav_li">Home</li>
-                <li class="nav_li">About</li>
-                <li class="nav_li">Works</li>
-                <li class="nav_li">Contact</li>
+                <li class="nav_li home" onclick="check_me(event)">Home</li>
+                <li class="nav_li about" onclick="check_me(event)">About</li>
+                <li class="nav_li works" onclick="check_me(event)">Works</li>
+                <li class="nav_li contact" onclick="check_me(event)">Contact</li>
                 <li class="nav_li">Resume</li>
             </ul>
         </div>
+
 
         <!--About Me-->
         <div id="about_container">
 
             <div class="wt_center">
-                <h1 class="kenny lax" data-lax-translate-y="0 0, 2500 -400" data-lax-opacity="0 1, 400 0">Kenny Seo</h1>
+                <h1 class="kenny lax animated jackInTheBox" data-lax-translate-y="0 0, 2500 -400" data-lax-opacity="0 1, 400 0">Kenny Seo</h1>
             </div>
 
         <!--end of #about_container div-->

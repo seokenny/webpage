@@ -48,3 +48,24 @@ function onRightClick() {
     document.getElementById("left_side").classList.remove("active_hand");
     document.getElementById("right_side").classList.add("active_hand");
 }
+
+var desktopNavs = [["nav_li home", "#about_container"],["nav_li about", "#about_me_container"], ["nav_li works", "#work_container"]];
+
+function check_me(ev) {
+    ev.preventDefault();
+    console.log(ev);
+    for(var i = 0; i < desktopNavs.length; i++){
+        if(ev.path[0].className == desktopNavs[i][0]){
+            var target = $(desktopNavs[i][1]);
+            console.log(target);
+            if (target.length) {
+                var top = target.offset().top;
+                if(ev.path[0].className != desktopNavs[0][0]){
+                    top-=100;
+                }
+                $('html,body').animate({scrollTop: top}, 700);
+                return false;
+            }
+        }
+    }
+}
