@@ -71,7 +71,6 @@
         <!--Work-->
         <div id="work_container">
 
-
             <!--Rugs USA-->
             <div id="rugsusa" class="work_item">
                 <div id="rugsusa_banner" class="work_banner" data-tilt data-tilt-max="5"></div><div class="work_content">
@@ -192,18 +191,22 @@
 
         <!--end of #work_container div-->
         </div>
-        <div id="#contact_contain">
-            <form class="contact-form" action="contactform.php" method="post">
-                Name<br>
-                <input type="text" name="name"><br>
-                Email<br>
-                <input type="text" name="mail"><br>
-                Subject<br>
-                <input type="text" name="subject"><br>
-                Comment<br>
-                <textarea name="message"></textarea><br>
-                <input type="submit" name="submit" value="Send">
+
+        <!--Contact-->
+        <div id="contact_container">
+            <div class="contact_header_contain">
+                <h1 class="contact_header">Send me a message!</h1>
+                <h2 class="contact_descript">Feel free to contact me for any inquiries.</h2>
+            </div>
+
+            <form action="https://formspree.io/seo.kenny94@gmail.com" method="POST">
+                <input class="form_inputs" name="name" id="name" type="text" placeholder="Name">
+                <input class="form_inputs" name="email" id="email" type="text" placeholder="Email">
+                <textarea class="form_inputs" id="message" name="message" rows="7" placeholder="Write your message here!"></textarea>
+                <input class="form_inputs submit_button" type="submit" value="Send Message" name="submit">
             </form>
+
+            </div>
         </div>
 
     <script src="js/vanilla-tilt.js"></script>

@@ -49,7 +49,7 @@ function onRightClick() {
     document.getElementById("right_side").classList.add("active_hand");
 }
 
-var desktopNavs = [["nav_li home", "#about_container", ".nav_li.home"],["nav_li about", "#about_me_container", ".nav_li.about"], ["nav_li works", "#work_container", "nav_li.works"]];
+var desktopNavs = [["nav_li home", "#about_container", ".nav_li.home"],["nav_li about", "#about_me_container", ".nav_li.about"], ["nav_li works", "#work_container", "nav_li.works"], ["nav_li contact", "#contact_container", "nav_li.contact"]];
 
 function check_me(ev) {
     ev.preventDefault();

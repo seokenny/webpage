@@ -1,10 +1,8 @@
 .wt_center {
-	/**Start of vertical/horizontal centering**/
 	position:absolute;
 	top:50%;
 	left:50%;
 	transform:translate(-50%, -50%);
-	/**End of vertical/horizontal centering**/
 	text-align:center;
 	width:100%;
 }
@@ -12,6 +10,8 @@
 *, p, h1, h2, h3, h4, h5, h6, ul, li {
     margin:unset;
     padding:unset;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 ul {
@@ -343,12 +343,68 @@ li {
     cursor:pointer;
 }
 
+/**Contact**/
+#contact_container {
+    width:100%;
+    padding-top:100px;
+    padding-bottom:100px;
+    max-width:731px;
+    margin:auto;
+}
+
+.contact_header_contain {
+    width:80%;
+    margin-left:10%;
+}
+
+.contact_descript {
+    font-family:"Century Gothic";
+    font-size:1em;
+    margin:10px 0;
+}
+
+.contact_header {
+    font-family:"Cocogoose";
+}
+
+textarea, input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color:white;
+    padding:10px 0;
+}
+
+.form_inputs {
+    display:block;
+    width:80%;
+    margin-left:10%;
+    background:unset;
+    border:unset;
+    border-bottom:2px solid white;
+    font-family:"Century Gothic";
+    margin-top:15px;
+}
+
+.submit_button {
+    background:white;
+    color:black;
+    font-size:.9em;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+
 @font-face { font-family: Sunday; src: url("../fonts/Sunday.ttf"); }
 @font-face { font-family: Cocogoose; src: url("../fonts/Cocogoose.ttf"); }
 @font-face { font-family: Sonder; src: url("../fonts/Sonder.otf"); }
 
 .hidden {
     display:none;
+    width:100%;
 }
 
 .m_nav_show {
@@ -374,28 +430,6 @@ li {
 }
 
 @media only screen and (min-width:750px) {
-    /* .work_banner, .work_content {
-        width:47.5%;
-        display:inline-block;
-    }
-    .work_banner {
-        margin-right:2.5%;
-        margin-left:unset;
-    }
-    .work_content {
-        margin-left:2.5%;
-        text-align:left;
-    }
-    .right_float {
-        float:right;
-        margin-right:unset;
-        margin-left:2.5%;
-    }
-    .reverse_text {
-        margin-right:2.5%;
-        margin-left:unset;
-        text-align:right;
-    } */
     .work_item {
         display:flex;
     }
@@ -445,6 +479,9 @@ li {
 @media only screen and (min-width:992px) {
     #m_nav, #m_nav_2 {
         display:none;
+    }
+    #contact_contain {
+        width:731px;
     }
 }
 
