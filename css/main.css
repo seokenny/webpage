@@ -250,6 +250,10 @@ li {
     text-align:center;
 }
 
+#zombiedice.work_item {
+    margin-bottom:unset;
+}
+
 .work_banner{
     width:100%;
     padding-top:100%;
