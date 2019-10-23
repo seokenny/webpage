@@ -138,6 +138,7 @@ li {
 .m_nav_li {
     margin:25px 0;
     cursor:pointer;
+    transition:.2s ease-in-out;
 }
 
 .hand {
@@ -199,6 +200,7 @@ li {
     font-weight:bold;
     position:relative;
     cursor:pointer;
+    transition:.2s ease-in-out;
 }
 
 .m_nav_li:hover, .nav_li:hover {
@@ -213,6 +215,22 @@ li {
 
 .kenny, .who_am_i {
     font-family:'Cocogoose';
+}
+
+.kenny {
+    font-size:10vw;
+}
+
+.kenny_description {
+    font-family:'Cocogoose';
+    margin-top:30px;
+    font-size:.8em;
+}
+
+.down_arrow {
+    height:30px;
+    width:30px;
+    cursor:pointer;
 }
 
 .who_am_i {
@@ -454,10 +472,28 @@ textarea, input {
     font-size:.9em;
     font-weight:bold;
     cursor:pointer;
+    transition:0.2s ease-in-out;
+    border:unset;
+}
+
+.submit_button:hover {
+    background:#3C3444;
 }
 
 input[type="text"], input[type="password"], textarea, select { 
     outline: none;
+}
+
+.social_buttons {
+    margin:30px 0;
+}
+
+.social_buttons img {
+    display:inline-block;
+    height:35px;
+    width:35px;
+    margin:0 10px;
+    transition:.2s ease-in-out;
 }
 
 @font-face { font-family: Sunday; src: url("../fonts/Sunday.ttf"); }
@@ -534,6 +570,9 @@ input[type="text"], input[type="password"], textarea, select {
     .view_live, .view_line, .view_code {
         display:inline-block;
     }
+    #mobile_navigation {
+        display:none;
+    }
 }
 
 @media only screen and (min-width:800px) {
@@ -570,5 +609,8 @@ input[type="text"], input[type="password"], textarea, select {
     }
     .work_item {
         justify-content:center;
+    }
+    .kenny {
+        font-size:126.5px;
     }
 }

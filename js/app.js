@@ -22,6 +22,13 @@ $(document).scroll(function(){
     }
 });
 
+$(document).scroll(function(){
+    if(document.body.scrollTop === 0){
+        $(".kenny").removeClass("animated");
+        $(".kenny").removeClass("jackInTheBox");
+    }
+});
+
 var counter = 0;
 
 function onMenuClick() {
@@ -83,6 +90,14 @@ function check_me(ev) {
             }
         }
     }
+}
+
+function downArrow() {
+    var goTo = $("#about_me_container");
+        var top = goTo.offset().top;
+        top-=100;
+        $('html,body').animate({scrollTop: top}, 700);
+        return false;
 }
 
 var mobileNavs = [["m_nav_li home", "#about_container", "m_nav_li home left_handed_css"],["m_nav_li about", "#about_me_container", "m_nav_li about left_handed_css"], ["m_nav_li works", "#work_container", "m_nav_li works left_handed_css"], ["m_nav_li contact", "#contact_container", "m_nav_li contact left_handed_css"]];
