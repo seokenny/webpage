@@ -590,9 +590,6 @@ input[type="text"], input[type="password"], textarea, select {
     .view_live, .view_line, .view_code {
         display:inline-block;
     }
-    #mobile_navigation {
-        display:none;
-    }
 }
 
 @media only screen and (min-width:800px) {
@@ -620,6 +617,9 @@ input[type="text"], input[type="password"], textarea, select {
     }
     #contact_contain {
         width:731px;
+    }
+    #mobile_navigation {
+        display:none;
     }
 }
 
