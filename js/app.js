@@ -70,6 +70,27 @@ function check_me(ev) {
     }
 }
 
+var mobileNavs = [["m_nav_li home", "#about_container", "m_nav_li home left_handed_css"],["m_nav_li about", "#about_me_container", "m_nav_li about left_handed_css"], ["m_nav_li works", "#work_container", "m_nav_li works left_handed_css"], ["m_nav_li contact", "#contact_container", "m_nav_li contact left_handed_css"]];
+
+function check_me(ev) {
+    ev.preventDefault();
+    console.log(ev);
+    for(var i = 0; i < mobileNavs.length; i++){
+        if(ev.path[0].className == mobileNavs[i][0] || ev.path[0].className == mobileNavs[i][2]){
+            var target = $(mobileNavs[i][1]);
+            console.log(target);
+            if (target.length) {
+                var top = target.offset().top;
+                if(ev.path[0].className != mobileNavs[0][0]){
+                    top-=100;
+                }
+                $('html,body').animate({scrollTop: top}, 700);
+                return false;
+            }
+        }
+    }
+}
+
 //RugsUsa
 
 $(".view_buttons.vl_rugsusa").mouseover(function(){

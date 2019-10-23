@@ -254,6 +254,7 @@ li {
 /**Work**/
 #work_container {
     width:100%;
+    padding-bottom:100px;
 }
 
 .work_item {
@@ -399,7 +400,6 @@ li {
 /**Contact**/
 #contact_container {
     width:100%;
-    padding-top:100px;
     padding-bottom:100px;
     max-width:731px;
     margin:auto;
