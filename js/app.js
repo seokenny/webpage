@@ -7,6 +7,21 @@ window.onload = function() {
     window.requestAnimationFrame(updateLax);
 }
 
+$(document).scroll(function(){
+    if($(this).scrollTop() >= $('#about_me_container').offset().top - 150) {
+        $("#rugsusa").removeClass("gone");
+        $("#rugsusa").addClass("zoomInRight");
+        $("#mixhour").removeClass("gone");
+        $("#mixhour").addClass("zoomInLeft");
+        $("#konditori").removeClass("gone");
+        $("#konditori").addClass("zoomInRight");
+        $("#fuyuramen").removeClass("gone");
+        $("#fuyuramen").addClass("zoomInLeft");
+        $("#zombiedice").removeClass("gone");
+        $("#zombiedice").addClass("zoomInRight");
+    }
+});
+
 var counter = 0;
 
 function onMenuClick() {
