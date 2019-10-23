@@ -257,11 +257,12 @@ li {
 #work_container {
     width:100%;
     padding-bottom:100px;
+    margin-top:100px;
 }
 
 .work_item {
     width:80%;
-    margin:50px 0;
+    padding:50px 0;
     margin-left:10%;
     text-align:center;
     transition:0.75s ease-in-out;
@@ -494,6 +495,23 @@ input[type="text"], input[type="password"], textarea, select {
     .work_item {
         display:flex;
     }
+    /* .work_description {
+        width:90%;
+    }
+    .left_border {
+        border:1px solid #333;
+        border-left:unset;
+    }
+    .right_border {
+        border:1px solid #333;
+        border-right:unset;
+    }
+    #rugsusa.left_border, #mixhour.right_border, #konditori.left_border, #fuyuramen.right_border {
+        border-bottom:unset;
+    }
+    #mixhour .work_description, #fuyuramen .work_description {
+        margin-left:10%;
+    } */
     #rugsusa, #konditori, #mystiq, #zombiedice {
         text-align:left;
     }
