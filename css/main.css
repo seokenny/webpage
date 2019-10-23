@@ -26,6 +26,7 @@ a {
 body {
     background:#160D1F;
     color:white;
+    overflow-x:hidden;
 }
 
 .background_img {
@@ -141,6 +142,7 @@ li {
 
 .hand {
     position:fixed;
+    cursor:pointer;
 }
 
 .left_handed {
@@ -199,7 +201,7 @@ li {
     cursor:pointer;
 }
 
-.nav_li:hover {
+.m_nav_li:hover, .nav_li:hover {
     color:#FF6152;
 }
 

@@ -72,7 +72,7 @@ function check_me(ev) {
 
 var mobileNavs = [["m_nav_li home", "#about_container", "m_nav_li home left_handed_css"],["m_nav_li about", "#about_me_container", "m_nav_li about left_handed_css"], ["m_nav_li works", "#work_container", "m_nav_li works left_handed_css"], ["m_nav_li contact", "#contact_container", "m_nav_li contact left_handed_css"]];
 
-function check_me(ev) {
+function check_me_2(ev) {
     ev.preventDefault();
     console.log(ev);
     for(var i = 0; i < mobileNavs.length; i++){
