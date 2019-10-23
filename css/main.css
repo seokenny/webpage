@@ -256,11 +256,19 @@ li {
 }
 
 /**Banners**/
-#rugsusa_banner {background-image:url("../images/updated/rugsusa.jpg");}
-#mixhour_banner {background-image:url("../images/updated/mixhourly.jpg");}
-#konditori_banner {background-image:url("../images/updated/konditori.jpg");}
-#fuyuramen_banner {background-image:url("../images/updated/fuyuramen.jpg");}
-#zombiedice_banner {background-image:url("../images/updated/zombiedice.jpg");}
+#rugsusa_banner {background-image:url("../images/updated/rugsusareg.jpg");transition:0.5s ease-in-out;}
+#mixhour_banner {background-image:url("../images/updated/mixhourlyreg.jpg");transition:0.5s ease-in-out;}
+#konditori_banner {background-image:url("../images/updated/konditorireg.jpg");transition:0.5s ease-in-out;}
+#fuyuramen_banner {background-image:url("../images/updated/fuyuramenreg.jpg");transition:0.5s ease-in-out;}
+#zombiedice_banner {background-image:url("../images/updated/zombiedicereg.jpg");transition:0.5s ease-in-out;}
+#oldportfolio_banner {background-image:url("../images/updated/oldwebsitereg.jpg");border:1px solid #333;transition:0.5s ease-in-out;}
+
+#rugsusa_banner.reg {background-image:url("../images/updated/rugsusa.jpg");}
+#mixhour_banner.reg {background-image:url("../images/updated/mixhourly.jpg");}
+#konditori_banner.reg {background-image:url("../images/updated/konditori.jpg");}
+#fuyuramen_banner.reg {background-image:url("../images/updated/fuyuramen.jpg");}
+#zombiedice_banner.reg {background-image:url("../images/updated/zombiedice.jpg");}
+#oldportfolio_banner.reg {background-image:url("../images/updated/oldwebsite.jpg");border:1px solid #333;}
 
 /**Titles**/
 #rugsusa_title {color:#FF6152;}
@@ -268,6 +276,7 @@ li {
 #konditori_title {color:#1AE5B4;}
 #fuyuramen_title {color:#0E8DAC;}
 #zombiedice_title {color:#89499D;}
+#oldportfolio_title {color:#aaa;}
 
 
 /**Work**/
@@ -345,6 +354,7 @@ li {
 #konditori .work_buttons {color:#117D63;}
 #fuyuramen .work_buttons {color:#076177;}
 #zombiedice .work_buttons {color:#71218B;}
+#oldportfolio .work_buttons {color:#666;}
 
 .view_line {
     border-left:1px solid #aaa;
@@ -356,7 +366,8 @@ li {
 #konditori_banner:hover,
 #fuyuramen_banner:hover,
 #mystiq_banner:hover,
-#zombiedice_banner:hover {
+#zombiedice_banner:hover,
+#oldportfolio_banner:hover {
     box-shadow:0 0 7px black;
 }
 
@@ -378,6 +389,10 @@ li {
 
 #zombiedice a:hover {
     color:#89499D;
+}
+
+#oldportfolio a:hover {
+    color:#aaa;
 }
 
 .view_buttons {
@@ -422,6 +437,10 @@ li {
 
 .vl_zombiedice .cross_button_right, .vc_zombiedice .cross_button {
     background:#89499D !important;
+}
+
+.vl_oldportfolio .cross_button_right, .vc_oldportfolio .cross_button {
+    background:#aaa !important;
 }
 
 /**Contact**/
@@ -561,7 +580,7 @@ input[type="text"], input[type="password"], textarea, select {
     .wb_right {
         justify-content:flex-end;
     }
-    #mixhour, #fuyuramen {
+    #mixhour, #fuyuramen, #oldportfolio {
         flex-direction:row-reverse;
         text-align:right;
     }

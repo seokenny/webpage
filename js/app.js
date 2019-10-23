@@ -19,6 +19,8 @@ $(document).scroll(function(){
         $("#fuyuramen").addClass("zoomInLeft");
         $("#zombiedice").removeClass("gone");
         $("#zombiedice").addClass("zoomInRight");
+        $("#oldportfolio").removeClass("gone");
+        $("#oldportfolio").addClass("zoomInRight");
     }
 });
 
@@ -237,4 +239,88 @@ $(".view_buttons.vc_zombiedice").mouseout(function(){
     $(".vc_zombiedice .cross_button").stop().animate({
         left:"-100%"
     },500);
+});
+
+//Old Portfolio
+
+$(".view_buttons.vl_oldportfolio").mouseover(function(){
+    $(".vl_oldportfolio .cross_button_right").stop().animate({
+        right:0
+    },500);
+});
+
+$(".view_buttons.vl_oldportfolio").mouseout(function(){
+    $(".vl_oldportfolio .cross_button_right").stop().animate({
+        right:"-100%"
+    },500);
+});
+
+$(".view_buttons.vc_oldportfolio").mouseover(function(){
+    $(".vc_oldportfolio .cross_button").stop().animate({
+        left:0
+    },500);
+});
+
+$(".view_buttons.vc_oldportfolio").mouseout(function(){
+    $(".vc_oldportfolio .cross_button").stop().animate({
+        left:"-100%"
+    },500);
+});
+
+
+//Rugs Usa Banner
+$("#rugsusa_banner").mouseover(function(){
+    $("#rugsusa_banner").removeClass("reg");
+});
+
+$("#rugsusa_banner").mouseout(function(){
+    $("#rugsusa_banner").addClass("reg");
+});
+
+//Mix Hour Banner
+
+$("#mixhour_banner").mouseover(function(){
+    $("#mixhour_banner").removeClass("reg");
+});
+
+$("#mixhour_banner").mouseout(function(){
+    $("#mixhour_banner").addClass("reg");
+});
+
+//Konditori Banner
+$("#konditori_banner").mouseover(function(){
+    $("#konditori_banner").removeClass("reg");
+});
+
+$("#konditori_banner").mouseout(function(){
+    $("#konditori_banner").addClass("reg");
+});
+
+//Fuyu Ramen Banner
+
+$("#fuyuramen_banner").mouseover(function(){
+    $("#fuyuramen_banner").removeClass("reg");
+});
+
+$("#fuyuramen_banner").mouseout(function(){
+    $("#fuyuramen_banner").addClass("reg");
+});
+
+//Zombie Dice Banner
+$("#zombiedice_banner").mouseover(function(){
+    $("#zombiedice_banner").removeClass("reg");
+});
+
+$("#zombiedice_banner").mouseout(function(){
+    $("#zombiedice_banner").addClass("reg");
+});
+
+//OLd Portfolio Banner
+
+$("#oldportfolio_banner").mouseover(function(){
+    $("#oldportfolio_banner").removeClass("reg");
+});
+
+$("#oldportfolio_banner").mouseout(function(){
+    $("#oldportfolio_banner").addClass("reg");
 });
