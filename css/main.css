@@ -247,6 +247,7 @@ li {
 #rugsusa_title {color:#FF6152;}
 #mixhour_title {color:#BC0C6A;}
 #konditori_title {color:#1AE5B4;}
+#fuyuramen_title {color:#0E8DAC;}
 #zombiedice_title {color:#89499D;}
 
 
@@ -315,7 +316,7 @@ li {
 #mixhour .work_buttons {color:#8E0850;}
 #konditori .work_buttons {color:#117D63;}
 #fuyuramen .work_buttons {color:#076177;}
-#zombiedice .work_buttons {color:#5B1F6F;}
+#zombiedice .work_buttons {color:#71218B;}
 
 .view_line {
     border-left:1px solid #aaa;
@@ -339,8 +340,60 @@ li {
     color:#BC0C6A;
 }
 
+#konditori a:hover {
+    color:#1AE5B4;
+}
+
+#fuyuramen a:hover {
+    color:#0E8DAC;
+}
+
+#zombiedice a:hover {
+    color:#89499D;
+}
+
 .view_buttons {
     cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+
+.cross_button {
+    width:100%;
+    height:1px;
+    z-index:-1;
+    position:absolute;
+    top:50%;
+    left:-100%;
+}
+
+.cross_button_right {
+    width:100%;
+    height:1px;
+    z-index:-1;
+    position:absolute;
+    top:50%;
+    right:-100%;
+}
+
+.vl_rugsusa .cross_button {
+    background:#FF6152 !important;
+}
+
+.vl_mixhour .cross_button_right, .vc_mixhour .cross_button {
+    background:#BC0C6A !important;
+}
+
+.vl_konditori .cross_button_right, .vc_konditori .cross_button {
+    background:#1AE5B4 !important;
+}
+
+.vl_fuyuramen .cross_button_right, .vc_fuyuramen .cross_button {
+    background:#0E8DAC !important;
+}
+
+.vl_zombiedice .cross_button_right, .vc_zombiedice .cross_button {
+    background:#89499D !important;
 }
 
 /**Contact**/
@@ -433,10 +486,10 @@ input[type="text"], input[type="password"], textarea, select {
     .work_item {
         display:flex;
     }
-    #rugsusa, #konditori, #mystiq {
+    #rugsusa, #konditori, #mystiq, #zombiedice {
         text-align:left;
     }
-    #rugsusa .work_banner, #konditori .work_banner, #mystiq .work_banner {
+    #rugsusa .work_banner, #konditori .work_banner, #zombiedice .work_banner {
         margin-left:unset;
     }
     .wb_left {
@@ -445,7 +498,7 @@ input[type="text"], input[type="password"], textarea, select {
     .wb_right {
         justify-content:flex-end;
     }
-    #mixhour, #fuyuramen, #zombiedice {
+    #mixhour, #fuyuramen {
         flex-direction:row-reverse;
         text-align:right;
     }

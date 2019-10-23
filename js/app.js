@@ -69,3 +69,121 @@ function check_me(ev) {
         }
     }
 }
+
+//RugsUsa
+
+$(".view_buttons.vl_rugsusa").mouseover(function(){
+    $(".vl_rugsusa .cross_button").stop().animate({
+        left:0
+    },500);
+});
+
+$(".view_buttons.vl_rugsusa").mouseout(function(){
+    $(".vl_rugsusa .cross_button").stop().animate({
+        left:"-100%"
+    },500);
+});
+
+//MixHour
+
+$(".view_buttons.vl_mixhour").mouseover(function(){
+    $(".vl_mixhour .cross_button_right").stop().animate({
+        right:0
+    },500);
+});
+
+$(".view_buttons.vl_mixhour").mouseout(function(){
+    $(".vl_mixhour .cross_button_right").stop().animate({
+        right:"-100%"
+    },500);
+});
+
+$(".view_buttons.vc_mixhour").mouseover(function(){
+    $(".vc_mixhour .cross_button").stop().animate({
+        left:0
+    },500);
+});
+
+$(".view_buttons.vc_mixhour").mouseout(function(){
+    $(".vc_mixhour .cross_button").stop().animate({
+        left:"-100%"
+    },500);
+});
+
+//Konditori
+
+$(".view_buttons.vl_konditori").mouseover(function(){
+    $(".vl_konditori .cross_button_right").stop().animate({
+        right:0
+    },500);
+});
+
+$(".view_buttons.vl_konditori").mouseout(function(){
+    $(".vl_konditori .cross_button_right").stop().animate({
+        right:"-100%"
+    },500);
+});
+
+$(".view_buttons.vc_konditori").mouseover(function(){
+    $(".vc_konditori .cross_button").stop().animate({
+        left:0
+    },500);
+});
+
+$(".view_buttons.vc_konditori").mouseout(function(){
+    $(".vc_konditori .cross_button").stop().animate({
+        left:"-100%"
+    },500);
+});
+
+//Fuyu Ramen
+
+$(".view_buttons.vl_fuyuramen").mouseover(function(){
+    $(".vl_fuyuramen .cross_button_right").stop().animate({
+        right:0
+    },500);
+});
+
+$(".view_buttons.vl_fuyuramen").mouseout(function(){
+    $(".vl_fuyuramen .cross_button_right").stop().animate({
+        right:"-100%"
+    },500);
+});
+
+$(".view_buttons.vc_fuyuramen").mouseover(function(){
+    $(".vc_fuyuramen .cross_button").stop().animate({
+        left:0
+    },500);
+});
+
+$(".view_buttons.vc_fuyuramen").mouseout(function(){
+    $(".vc_fuyuramen .cross_button").stop().animate({
+        left:"-100%"
+    },500);
+});
+
+//ZombieDice
+
+$(".view_buttons.vl_zombiedice").mouseover(function(){
+    $(".vl_zombiedice .cross_button_right").stop().animate({
+        right:0
+    },500);
+});
+
+$(".view_buttons.vl_zombiedice").mouseout(function(){
+    $(".vl_zombiedice .cross_button_right").stop().animate({
+        right:"-100%"
+    },500);
+});
+
+$(".view_buttons.vc_zombiedice").mouseover(function(){
+    $(".vc_zombiedice .cross_button").stop().animate({
+        left:0
+    },500);
+});
+
+$(".view_buttons.vc_zombiedice").mouseout(function(){
+    $(".vc_zombiedice .cross_button").stop().animate({
+        left:"-100%"
+    },500);
+});
