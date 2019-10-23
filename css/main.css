@@ -256,12 +256,11 @@ li {
 }
 
 /**Banners**/
-#rugsusa_banner {background-image:url("../images/rugsbannernewsmall.jpg");}
-#mixhour_banner {background-image:url("../images/guesserbannernewsmall.jpg");}
-#konditori_banner {background-image:url("../images/konditoribannersm.jpg");}
-#fuyuramen_banner {background-image:url("../images/fuyubannernewsmall.jpg");}
-#mystiq_banner {background-image:url("../images/mysticbannernewsmall.jpg");}
-#zombiedice_banner {background-image:url("../images/zombiebannernewsmall.jpg");}
+#rugsusa_banner {background-image:url("../images/updated/rugsusa.jpg");}
+#mixhour_banner {background-image:url("../images/updated/mixhourly.jpg");}
+#konditori_banner {background-image:url("../images/updated/konditori.jpg");}
+#fuyuramen_banner {background-image:url("../images/updated/fuyuramen.jpg");}
+#zombiedice_banner {background-image:url("../images/updated/zombiedice.jpg");}
 
 /**Titles**/
 #rugsusa_title {color:#FF6152;}
@@ -300,6 +299,7 @@ li {
     padding-top:100%;
     background-size:cover;
     background-repeat:no-repeat;
+    background-position:center;
 }
 
 .work_title {
@@ -478,6 +478,7 @@ textarea, input {
 
 .submit_button:hover {
     background:#3C3444;
+    color:white;
 }
 
 input[type="text"], input[type="password"], textarea, select { 
