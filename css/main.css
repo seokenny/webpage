@@ -260,14 +260,14 @@ li {
 #mixhour_banner {background-image:url("../images/updated/mixhourlyreg.jpg");transition:0.5s ease-in-out;}
 #konditori_banner {background-image:url("../images/updated/konditorireg.jpg");transition:0.5s ease-in-out;}
 #fuyuramen_banner {background-image:url("../images/updated/fuyuramenreg.jpg");transition:0.5s ease-in-out;}
-#zombiedice_banner {background-image:url("../images/updated/zombiedicereg.jpg");transition:0.5s ease-in-out;}
+#weatherds_banner {background-image:url("../images/updated/weatherdsreg.jpg");transition:0.5s ease-in-out;}
 #oldportfolio_banner {background-image:url("../images/updated/oldwebsitereg.jpg");border:1px solid #333;transition:0.5s ease-in-out;}
 
 #rugsusa_banner.reg {background-image:url("../images/updated/rugsusa.jpg");}
 #mixhour_banner.reg {background-image:url("../images/updated/mixhourly.jpg");}
 #konditori_banner.reg {background-image:url("../images/updated/konditori.jpg");}
 #fuyuramen_banner.reg {background-image:url("../images/updated/fuyuramen.jpg");}
-#zombiedice_banner.reg {background-image:url("../images/updated/zombiedice.jpg");}
+#weatherds_banner.reg {background-image:url("../images/updated/weatherds.jpg");}
 #oldportfolio_banner.reg {background-image:url("../images/updated/oldwebsite.jpg");border:1px solid #333;}
 
 /**Titles**/
@@ -275,7 +275,7 @@ li {
 #mixhour_title {color:#BC0C6A;}
 #konditori_title {color:#1AE5B4;}
 #fuyuramen_title {color:#0E8DAC;}
-#zombiedice_title {color:#89499D;}
+#weatherds_title {color:#89499D;}
 #oldportfolio_title {color:#aaa;}
 
 
@@ -299,7 +299,7 @@ li {
     opacity:0;
 }
 
-#zombiedice {
+#weatherds {
     margin-bottom:unset;
 }
 
@@ -353,7 +353,7 @@ li {
 #mixhour .work_buttons {color:#8E0850;}
 #konditori .work_buttons {color:#117D63;}
 #fuyuramen .work_buttons {color:#076177;}
-#zombiedice .work_buttons {color:#71218B;}
+#weatherds .work_buttons {color:#71218B;}
 #oldportfolio .work_buttons {color:#666;}
 
 .view_line {
@@ -366,7 +366,7 @@ li {
 #konditori_banner:hover,
 #fuyuramen_banner:hover,
 #mystiq_banner:hover,
-#zombiedice_banner:hover,
+#weatherds_banner:hover,
 #oldportfolio_banner:hover {
     box-shadow:0 0 7px black;
 }
@@ -387,7 +387,7 @@ li {
     color:#0E8DAC;
 }
 
-#zombiedice a:hover {
+#weatherds a:hover {
     color:#89499D;
 }
 
@@ -435,7 +435,7 @@ li {
     background:#0E8DAC !important;
 }
 
-.vl_zombiedice .cross_button_right, .vc_zombiedice .cross_button {
+.vl_weatherds .cross_button_right, .vc_weatherds .cross_button {
     background:#89499D !important;
 }
 
@@ -568,10 +568,10 @@ input[type="text"], input[type="password"], textarea, select {
     #mixhour .work_description, #fuyuramen .work_description {
         margin-left:10%;
     } */
-    #rugsusa, #konditori, #mystiq, #zombiedice {
+    #rugsusa, #mystiq, #weatherds, #fuyuramen {
         text-align:left;
     }
-    #rugsusa .work_banner, #konditori .work_banner, #zombiedice .work_banner {
+    #rugsusa .work_banner, #weatherds .work_banner, #fuyuramen .work_banner {
         margin-left:unset;
     }
     .wb_left {
@@ -580,7 +580,7 @@ input[type="text"], input[type="password"], textarea, select {
     .wb_right {
         justify-content:flex-end;
     }
-    #mixhour, #fuyuramen, #oldportfolio {
+    #mixhour, #konditori, #oldportfolio {
         flex-direction:row-reverse;
         text-align:right;
     }

@@ -17,8 +17,8 @@ $(document).scroll(function(){
         $("#konditori").addClass("zoomInRight");
         $("#fuyuramen").removeClass("gone");
         $("#fuyuramen").addClass("zoomInLeft");
-        $("#zombiedice").removeClass("gone");
-        $("#zombiedice").addClass("zoomInRight");
+        $("#weatherds").removeClass("gone");
+        $("#weatherds").addClass("zoomInRight");
         $("#oldportfolio").removeClass("gone");
         $("#oldportfolio").addClass("zoomInRight");
     }
@@ -215,28 +215,28 @@ $(".view_buttons.vc_fuyuramen").mouseout(function(){
     },500);
 });
 
-//ZombieDice
+//weatherds
 
-$(".view_buttons.vl_zombiedice").mouseover(function(){
-    $(".vl_zombiedice .cross_button_right").stop().animate({
+$(".view_buttons.vl_weatherds").mouseover(function(){
+    $(".vl_weatherds .cross_button_right").stop().animate({
         right:0
     },500);
 });
 
-$(".view_buttons.vl_zombiedice").mouseout(function(){
-    $(".vl_zombiedice .cross_button_right").stop().animate({
+$(".view_buttons.vl_weatherds").mouseout(function(){
+    $(".vl_weatherds .cross_button_right").stop().animate({
         right:"-100%"
     },500);
 });
 
-$(".view_buttons.vc_zombiedice").mouseover(function(){
-    $(".vc_zombiedice .cross_button").stop().animate({
+$(".view_buttons.vc_weatherds").mouseover(function(){
+    $(".vc_weatherds .cross_button").stop().animate({
         left:0
     },500);
 });
 
-$(".view_buttons.vc_zombiedice").mouseout(function(){
-    $(".vc_zombiedice .cross_button").stop().animate({
+$(".view_buttons.vc_weatherds").mouseout(function(){
+    $(".vc_weatherds .cross_button").stop().animate({
         left:"-100%"
     },500);
 });
@@ -307,12 +307,12 @@ $("#fuyuramen_banner").mouseout(function(){
 });
 
 //Zombie Dice Banner
-$("#zombiedice_banner").mouseover(function(){
-    $("#zombiedice_banner").removeClass("reg");
+$("#weatherds_banner").mouseover(function(){
+    $("#weatherds_banner").removeClass("reg");
 });
 
-$("#zombiedice_banner").mouseout(function(){
-    $("#zombiedice_banner").addClass("reg");
+$("#weatherds_banner").mouseout(function(){
+    $("#weatherds_banner").addClass("reg");
 });
 
 //OLd Portfolio Banner
