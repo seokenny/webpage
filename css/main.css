@@ -255,6 +255,16 @@ li {
     border-bottom:1px dashed #aaa;
 }
 
+.skills_list {
+    padding: 35px 0 10px 0;
+}
+
+.skills_list img {
+    height:50px;
+    display:inline-block;
+    margin:10px;
+}
+
 /**Banners**/
 #rugsusa_banner {background-image:url("../images/updated/rugsusareg.jpg");transition:0.5s ease-in-out;}
 #mixhour_banner {background-image:url("../images/updated/mixhourlyreg.jpg");transition:0.5s ease-in-out;}
@@ -620,6 +630,9 @@ input[type="text"], input[type="password"], textarea, select {
     }
     #mobile_navigation {
         display:none;
+    }
+    .skills_list_row {
+        display:inline-block;
     }
 }
 
