@@ -647,3 +647,53 @@ input[type="text"], input[type="password"], textarea, select {
         font-size:126.5px;
     }
 }
+
+
+/**Animations**/
+
+.skill-logo {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    backface-visibility: hidden;
+    transition: transform .5s ease-in-out;
+}
+
+.html {
+    transform: rotateY(90deg);
+}
+
+.css {
+    transform: rotateX(90deg);
+}
+
+.sass {
+    transform: rotateY(-90deg);
+}
+
+.javascript {
+    transform: rotateY(90deg);
+}
+
+.jquery {
+    transform: rotateX(90deg);
+}
+
+.react {
+    transform: rotateX(-90deg);
+}
+
+.photoshop {
+    transform: rotateY(90deg);
+}
+
+.figma {
+    transform: rotateX(-90deg);
+}
+
+.turnY {
+    transform: rotateY(0deg);
+}
+
+.turnX {
+    transform: rotateX(0deg);
+}

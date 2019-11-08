@@ -5,10 +5,22 @@ window.onload = function() {
         window.requestAnimationFrame(updateLax);
     }
     window.requestAnimationFrame(updateLax);
+    
 }
 
 $(document).scroll(function(){
     if($(this).scrollTop() >= $('#about_me_container').offset().top - 150) {
+        
+        setTimeout(function(){
+            $(".html").addClass("turnY");
+            $(".css").addClass("turnX");
+            $(".sass").addClass("turnY");
+            $(".javascript").addClass("turnY");
+            $(".jquery").addClass("turnX");
+            $(".react").addClass("turnX");
+            $(".photoshop").addClass("turnY");
+            $(".figma").addClass("turnX");
+        },100);
         $("#rugsusa").removeClass("gone");
         $("#rugsusa").addClass("zoomInRight");
         $("#mixhour").removeClass("gone");
