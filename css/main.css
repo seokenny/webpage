@@ -269,12 +269,12 @@ li {
 }
 
 /**Banners**/
-#rugsusa_banner {background-image:url("../images/updated/rugsusareg.jpg");transition:0.5s ease-in-out;}
-#mixhour_banner {background-image:url("../images/updated/mixhourlyreg.jpg");transition:0.5s ease-in-out;}
-#konditori_banner {background-image:url("../images/updated/konditorireg.jpg");transition:0.5s ease-in-out;}
-#fuyuramen_banner {background-image:url("../images/updated/fuyuramenreg.jpg");transition:0.5s ease-in-out;}
-#weatherds_banner {background-image:url("../images/updated/weatherdsreg.jpg");transition:0.5s ease-in-out;}
-#oldportfolio_banner {background-image:url("../images/updated/oldwebsitereg.jpg");border:1px solid #333;transition:0.5s ease-in-out;}
+#rugsusa_banner {background-image:url("../images/updated/rugsusareg.jpg");transition:all 0.25s ease-in-out;}
+#mixhour_banner {background-image:url("../images/updated/mixhourlyreg.jpg");transition:0.25s ease-in-out;}
+#konditori_banner {background-image:url("../images/updated/konditorireg.jpg");transition:0.25s ease-in-out;}
+#fuyuramen_banner {background-image:url("../images/updated/fuyuramenreg.jpg");transition:0.25s ease-in-out;}
+#weatherds_banner {background-image:url("../images/updated/weatherdsreg.jpg");transition:0.25s ease-in-out;}
+#oldportfolio_banner {background-image:url("../images/updated/oldwebsitereg.jpg");border:1px solid #333;transition:0.25s ease-in-out;}
 
 #rugsusa_banner.reg {background-image:url("../images/updated/rugsusa.jpg");}
 #mixhour_banner.reg {background-image:url("../images/updated/mixhourly.jpg");}
