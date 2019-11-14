@@ -263,8 +263,9 @@ li {
 }
 
 .skills_list img {
-    height:50px;
     display:inline-block;
+    opacity: 0;
+    height:50px;
     margin:10px;
 }
 
@@ -655,6 +656,10 @@ input[type="text"], input[type="password"], textarea, select {
 /**Animations**/
 
 .skill-logo {
+    display: none;
+}
+
+/* .skill-logo {
     perspective: 150rem;
     -moz-perspective: 150rem;
     backface-visibility: hidden;
@@ -699,4 +704,4 @@ input[type="text"], input[type="password"], textarea, select {
 
 .turnX {
     transform: rotateX(0deg);
-}
+} */

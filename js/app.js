@@ -12,14 +12,28 @@ $(document).scroll(function(){
     if($(this).scrollTop() >= $('#about_me_container').offset().top - 150) {
         
         setTimeout(function(){
-            $(".html").addClass("turnY");
-            $(".css").addClass("turnX");
-            $(".sass").addClass("turnY");
-            $(".javascript").addClass("turnY");
-            $(".jquery").addClass("turnX");
-            $(".react").addClass("turnX");
-            $(".photoshop").addClass("turnY");
-            $(".figma").addClass("turnX");
+            $(".html").addClass("fadeInDown");
+            setTimeout(function(){
+                $(".css").addClass("fadeInDown");
+            },150);
+            setTimeout(function(){
+                $(".sass").addClass("fadeInDown");
+            },300);
+            setTimeout(function(){
+                $(".javascript").addClass("fadeInDown");
+            },450);
+            setTimeout(function(){
+                $(".jquery").addClass("fadeInDown");
+            },600);
+            setTimeout(function(){
+                $(".react").addClass("fadeInDown");
+            },750);
+            setTimeout(function(){
+                $(".photoshop").addClass("fadeInDown");
+            },900);
+            setTimeout(function(){
+                $(".figma").addClass("fadeInDown");
+            },1050);
         },100);
         $("#rugsusa").removeClass("gone");
         $("#rugsusa").addClass("zoomInRight");
