@@ -293,7 +293,6 @@ $(".view_buttons.vc_oldportfolio").mouseout(function(){
     },500);
 });
 
-
 //Rugs Usa Banner
 $("#rugsusa_banner").mouseover(function(){
     $("#rugsusa_banner").removeClass("reg");
