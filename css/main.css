@@ -118,7 +118,7 @@ body {
 #mobile_navigation ul, #handmode {
     font-size:.9em;
     font-weight:bold;
-    font-family:'Century Gothic';
+    font-family:'Century Gothic', 'Heiti SC';
 }
 
 #mobile_navigation ul {
@@ -197,7 +197,7 @@ li {
     display:inline-block;
     width:unset;
     margin:25px 20px 25px 20px;
-    font-family:'Century Gothic';
+    font-family:'Century Gothic', 'Heiti SC';
     font-size:.9em;
     z-index:20;
     font-weight:bold;
@@ -242,7 +242,7 @@ li {
 }
 
 .about_description {
-    font-family:'Century Gothic';
+    font-family:'Century Gothic', 'Heiti SC';
     font-size:.9em;
     width:90%;
     margin-left:5%;
@@ -336,7 +336,7 @@ li {
 }
 
 .work_position, .work_buttons {
-    font-family:'Century Gothic';
+    font-family:'Century Gothic', 'Heiti SC';
     letter-spacing:.1em;
 }
 
@@ -471,7 +471,7 @@ li {
 }
 
 .contact_descript {
-    font-family:"Century Gothic";
+    font-family:"Century Gothic", 'Heiti SC';
     font-size:1em;
     margin:10px 0;
 }
@@ -495,7 +495,7 @@ textarea, input {
     background:unset;
     border:unset;
     border-bottom:2px solid white;
-    font-family:"Century Gothic";
+    font-family:"Century Gothic", 'Heiti SC';
     margin-top:15px;
 }
 
